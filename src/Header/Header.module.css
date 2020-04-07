@@ -1,0 +1,29 @@
+.header_container {
+    display: flex;
+    justify-content: flex-end;
+}
+.header {
+    grid-area: header;
+    background-color:black;
+    border-radius: 10px;
+}
+
+.main {
+    margin: 10px;
+    color: white;
+}
+
+.skills {
+    margin: 10px;
+    color: white;
+}
+
+.project {
+    margin: 10px;
+    color: white;
+}
+
+.contact {
+    margin: 10px;
+    color: white;
+}
