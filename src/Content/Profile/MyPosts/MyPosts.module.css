@@ -1,0 +1,41 @@
+.photo img {
+    border-radius: 10px;
+}
+.myPosts{
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+}
+.post_container {
+    margin-left: 20px;
+}
+.post_container img {
+    height:80px;
+    width: 80px;
+    border-radius: 50%;
+}
+.post {
+    display: flex;
+    justify-content: end;
+    margin: 20px 0px 2px 20px;
+}
+.post_message {
+    width: 400px;
+    height: auto;
+    border:1px solid black;
+    border-radius: 10px;
+    background-color: azure;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+.like{
+    width: 175px;
+    display: flex;
+    -webkit-print-color-adjust: 1;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+}

@@ -11,7 +11,6 @@ const Header = () => {
             <div className={s.contact}>Contacts</div>
         </div>
         </div>
-
 };
 
 export default Header;

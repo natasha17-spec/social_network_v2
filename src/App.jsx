@@ -2,19 +2,32 @@ import React from 'react';
 import  './App.css';
 import Header from "./Header/Header";
 import Sidebar from "./Sidebar/Sidebar";
-import Profile from "./Content/Profile";
+import Profile from "./Content/Profile/Profile";
+import Dialogs from "./Dialogs/Dialogs";
+import {BrowserRouter,Route} from "react-router-dom";
+import Users from "./User/Users";
+import News from "./News/News";
+
+
 
 function App() {
   return (
-      <div className="App">
-          <div className="grid-container">
-              <Header/>
-              <Sidebar/>
-              <Profile/>
-              <div className="area2"></div>
-              <div className="area1"></div>
+      <BrowserRouter>
+          <div className="App">
+              <div className="grid-container">
+                  <Header/>
+                  <Sidebar/>
+                  <div className="content">
+                      <Route path='/dialogs' component={Dialogs}/>
+                      <Route path='/profile' component={Profile}/>
+                      <Route path='/users' component={Users}/>
+                      <Route path='/news' component={News}/>
+                  </div>
+                  <div className="area2"></div>
+                  <div className="area1"></div>
+              </div>
           </div>
-      </div>
+      </BrowserRouter>
   );
 }
 

@@ -5,7 +5,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 150px 200px 700px 150px;
-    grid-template-rows: 50px 800px;
+    grid-template-rows: 50px auto;
     gap: 1px 1px;
     grid-template-areas: "header header header header" "area1 sidebar content area2";
 }

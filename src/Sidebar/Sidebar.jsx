@@ -4,11 +4,18 @@ import s from "./Sidebar.module.css"
 const Sidebar = () => {
     return  <div className="sidebar">
         <div className={s.sidebar_container}>
-            <div className={s.profile}><a href="#">Profile</a></div>
-            <div className={s.message}><a href="#">Message</a></div>
-            <div className={s.users}><a href="#">Users</a></div>
-            <div className={s.contacts}><a href="#">Contacts</a></div>
-            <div>News</div>
+            <div className={s.profile}>
+                <a href="/profile">Profile</a>
+        </div>
+            <div className={s.message}>
+                <a href="/dialogs">Message</a>
+            </div>
+            <div className={s.users}>
+                <a href="/users">Users
+                </a></div>
+            <div className={s.news}>
+                <a href="/news">News</a>
+            </div>
         </div>
 
 

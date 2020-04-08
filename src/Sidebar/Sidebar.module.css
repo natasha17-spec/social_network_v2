@@ -17,6 +17,13 @@ a {
     text-decoration:none;
     color: black;
 }
+a:active{
+    color:azure;
+}
+a:focus{
+    text-decoration:underline;
+}
+
 .profile {
     margin: 4px;
 }
@@ -27,6 +34,6 @@ a {
 .users {
     margin: 4px;
 }
-.contacts {
+.news {
     margin: 4px;
 }
