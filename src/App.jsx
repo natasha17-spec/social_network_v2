@@ -7,6 +7,9 @@ import Dialogs from "./Dialogs/Dialogs";
 import {BrowserRouter,Route} from "react-router-dom";
 import Users from "./User/Users";
 import News from "./News/News";
+import {Router} from "react-router";
+import Natali from "./Dialogs/MessageUsers/Natali/Natali";
+
 
 
 
@@ -18,10 +21,12 @@ function App() {
                   <Header/>
                   <Sidebar/>
                   <div className="content">
-                      <Route path='/dialogs' component={Dialogs}/>
-                      <Route path='/profile' component={Profile}/>
-                      <Route path='/users' component={Users}/>
-                      <Route path='/news' component={News}/>
+
+                          <Route path='/dialogs' component={Dialogs}/>
+                          <Route path='/profile' component={Profile}/>
+                          <Route path='/users' component={Users}/>
+                          <Route path='/news' component={News}/>
+
                   </div>
                   <div className="area2"></div>
                   <div className="area1"></div>

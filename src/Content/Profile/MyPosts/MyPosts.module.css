@@ -1,6 +1,9 @@
 .photo img {
     border-radius: 10px;
 }
+.addPost_button button {
+    border-radius: 3px;
+}
 .myPosts{
     display: flex;
     flex-direction: column;

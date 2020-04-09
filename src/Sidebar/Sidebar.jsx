@@ -1,20 +1,20 @@
 import React from 'react';
 import s from "./Sidebar.module.css"
+import {NavLink} from "react-router-dom";
 
 const Sidebar = () => {
     return  <div className="sidebar">
         <div className={s.sidebar_container}>
             <div className={s.profile}>
-                <a href="/profile">Profile</a>
+                <NavLink to="/profile">Profile</NavLink>
         </div>
             <div className={s.message}>
-                <a href="/dialogs">Message</a>
+                <NavLink to="/dialogs">Message</NavLink>
             </div>
             <div className={s.users}>
-                <a href="/users">Users
-                </a></div>
+                <NavLink to="/users">Users</NavLink></div>
             <div className={s.news}>
-                <a href="/news">News</a>
+                <NavLink to="/news">News</NavLink>
             </div>
         </div>
 
