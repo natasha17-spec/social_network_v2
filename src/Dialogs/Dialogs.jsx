@@ -5,30 +5,32 @@ import Dialog from "./Dialog";
 import Natali from "./MessageUsers/Natali/Natali";
 
 const Dialogs = (props) => {
+    let dialogUser = [
+        {nameUser: "Natali", pathTo: '/dialog/natali'},
+        {nameUser: "Kirill", pathTo: "/dialog/kirill"},
+        {nameUser: "Sveta", pathTo: '/dialog/sveta'},
+        {nameUser: "Dmitriy", pathTo: '/dialog/dmitriy'},
+        {nameUser: "Katya", pathTo: '/dialog/katya'},
+        {nameUser: "Anton", pathTo: '/dialog/anton'}
+    ];
+
+    let dialog = dialogUser.map((el) => {
+        return <Dialog nameUser={el.nameUser} pathTo={el.pathTo}/>
+    });
+
     return (
 
         <BrowserRouter>
             <div className={s.dialogs_container}>
-
                 <div className={s.users}>
-                    <Dialog nameUser="Natali" pathTo={'/natali'}/>
-                    <Dialog nameUser="Kirill" pathTo={"/kirill"}/>
-                    <Dialog nameUser="Sveta" pathTo={"/sveta"}/>
-                    <Dialog nameUser="Dmitriy" pathTo={"/dmitriy"}/>
-                    <Dialog nameUser="Katya" pathTo={"/katya"}/>
-                    <Dialog nameUser="Anton" pathTo={"/anton"}/>
+                    {dialog}
                 </div>
-
-
                 <div className={s.dialogs}>
-                    <Route path='/natali' render={(props) => {
+                    <Route path='/dialog/natali' render={(props) => {
                         return <Natali/>
                     }}/>
-
-
                 </div>
-
-              </div>
+            </div>
         </BrowserRouter>
 
     )

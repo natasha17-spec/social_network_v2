@@ -1,7 +1,7 @@
 import React from 'react';
 import s from "./Dialogs.module.css"
 import ava from "../picture/Ava-pats-12.jpg"
-import {NavLink, Route} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 
 const Dialog = (props) => {
@@ -16,7 +16,6 @@ const Dialog = (props) => {
                     <NavLink to={props.pathTo}>{props.nameUser}</NavLink>
                 </div>
     )
-
 };
 
 export default Dialog;
