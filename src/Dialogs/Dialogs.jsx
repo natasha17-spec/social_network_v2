@@ -19,7 +19,6 @@ const Dialogs = (props) => {
     });
 
     return (
-
         <BrowserRouter>
             <div className={s.dialogs_container}>
                 <div className={s.users}>
@@ -32,9 +31,7 @@ const Dialogs = (props) => {
                 </div>
             </div>
         </BrowserRouter>
-
     )
-
 };
 
 export default Dialogs;
