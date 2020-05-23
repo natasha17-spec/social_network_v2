@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "../Natali/allUsers.module.css";
-import ava from "../../../picture/Ava-pats-12.jpg";
+import ava from "../../../../picture/Ava-pats-12.jpg";
 
 
 const MessagesLeft = (props) => {

@@ -2,7 +2,7 @@ import React from 'react';
 import s from "./allUsers.module.css";
 import MessagesLeft from "../MessageUtil/MessagesLeft";
 import MyMessage from "../MessageUtil/MyMessage/MyMessage";
-import AddMessagesBox from "../../../Util/AddMessagesBox";
+import AddMessagesBox from "../../../../Util/AddMessagesBox";
 
 
 

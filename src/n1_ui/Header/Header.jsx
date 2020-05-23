@@ -7,7 +7,7 @@ const Header = () => {
         <div className={s.header_container}>
 
         </div>
-        </div>
+    </div>
 };
 
 export default Header;

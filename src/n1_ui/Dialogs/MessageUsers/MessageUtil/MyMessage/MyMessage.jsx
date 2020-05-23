@@ -1,6 +1,6 @@
 import React from 'react';
-import s from "../../MessageUtil/MyMessage/MyMessage.module.css";
-import ava from "../../../../picture/avaMe.jpg";
+import s from "./MyMessage.module.css";
+import ava from "../../../../../picture/avaMe.jpg";
 
 
 const MyMessage = (props) => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from "./Dialogs.module.css"
 import {BrowserRouter, Route} from "react-router-dom";
-import Dialog from "./Dialog";
+import DialogItem from "./DialogItem/DialogItem";
 import Natali from "./MessageUsers/Natali/Natali";
 
 const Dialogs = (props) => {
@@ -15,7 +15,7 @@ const Dialogs = (props) => {
     ];
 
     let dialog = dialogUser.map((el) => {
-        return <Dialog nameUser={el.nameUser} pathTo={el.pathTo}/>
+        return <DialogItem nameUser={el.nameUser} pathTo={el.pathTo}/>
     });
 
     return (
