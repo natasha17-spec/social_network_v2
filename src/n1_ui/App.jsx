@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-
 import {BrowserRouter, Route} from "react-router-dom";
 import Sidebar from "./Sidebar/Sidebar";
 import Header from "./Header/Header";
@@ -12,7 +11,6 @@ import News from "./News/News";
 
 
 function App(props) {
-
     return (
         <BrowserRouter>
             <div className="App">
@@ -20,8 +18,8 @@ function App(props) {
                     <Header/>
                     <Sidebar/>
                     <div className="content">
-                        <Route exact path='/dialogs' component={Dialogs}/>
-                        <Route path='/profile' render={()=><Profile myPost={props.myPost}/>}/>
+                        <Route exact path='/dialogs' render={()=><Dialogs dialogUser = {props.state.dialogs.dialogUser}/>}/>
+                        <Route path='/profile' render={()=><Profile myPost={props.state.posts.myPost}/>}/>
                         <Route path='/users' component={Users}/>
                         <Route path='/news' component={News}/>
                     </div>
