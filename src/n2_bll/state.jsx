@@ -1,3 +1,11 @@
+export const DIALOGNATALI = '/dialog/natali';
+export const DIALOGKIRILL = '/dialog/kirill';
+export const DIALOGSVETA = '/dialog/sveta';
+export const DIALOGDMITRY = '/dialog/dmitriy';
+export const DIALOGKATYA = '/dialog/katya';
+export const DIALOGANTON = '/dialog/anton';
+
+
 let state = {
     posts: {
         myPost: [
@@ -25,12 +33,12 @@ let state = {
     },
     dialogs: {
         dialogUser: [
-            {nameUser: "Natali", pathTo: '/dialog/natali'},
-            {nameUser: "Kirill", pathTo: "/dialog/kirill"},
-            {nameUser: "Sveta", pathTo: '/dialog/sveta'},
-            {nameUser: "Dmitriy", pathTo: '/dialog/dmitriy'},
-            {nameUser: "Katya", pathTo: '/dialog/katya'},
-            {nameUser: "Anton", pathTo: '/dialog/anton'}
+            {nameUser: "Natali", pathTo: DIALOGNATALI},
+            {nameUser: "Kirill", pathTo: DIALOGKIRILL},
+            {nameUser: "Sveta", pathTo: DIALOGSVETA},
+            {nameUser: "Dmitriy", pathTo: DIALOGDMITRY},
+            {nameUser: "Katya", pathTo: DIALOGKATYA},
+            {nameUser: "Anton", pathTo: DIALOGANTON}
         ]
     }
 }
