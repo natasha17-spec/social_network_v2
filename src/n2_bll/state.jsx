@@ -28,6 +28,10 @@ let state = {
                 dataPosts: "Sunday, April 5,2020",
                 likeCount: "108",
                 text: "Up until the end of May 2015 I always used compact little cameras, mostly the RX100 ii (UK click here, US click here). It’s a little pocket rocket that I recommend to anyone wanting to get into photography or blogging. In June I took the plunge and invested in a Canon 5D.I love it deeply! Though I do swap and change cameras now and then, depending where I’m going. My favourite lens is this one – UK/US as it gives you everything you need to shoot fashion, portraits or landscapes"
+            }, {
+                dataPosts: "Sunday, April 5,2020",
+                likeCount: "108",
+                text: "Up until the end of May 2015 I always used compact little cameras, mostly the RX100 ii (UK click here, US click here). It’s a little pocket rocket that I recommend to anyone wanting to get into photography or blogging. In June I took the plunge and invested in a Canon 5D.I love it deeply! Though I do swap and change cameras now and then, depending where I’m going. My favourite lens is this one – UK/US as it gives you everything you need to shoot fashion, portraits or landscapes"
             },
         ]
     },
